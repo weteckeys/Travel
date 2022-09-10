@@ -1,0 +1,34 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_flex">
+            <ion-icon name="arrow-back-outline" class="back_btn" (click)="goToBack()" ></ion-icon>
+
+            <div class="flex_header">
+                <ion-label class="bold_lbl">Adam Smith</ion-label>
+                <div class="back_img" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+            </div>
+
+            <ion-label class="simp_lbl">Email Address</ion-label>
+            <ion-input type="text" placeholder="Email Address">
+                <ion-icon name="mail-outline"></ion-icon>
+            </ion-input>
+
+            <ion-label class="simp_lbl">Password</ion-label>
+            <ion-input type="text" placeholder="Password">
+                <ion-icon name="mail-outline"></ion-icon>
+            </ion-input>
+
+            <ion-label class="simp_lbl">Proffession</ion-label>
+            <ion-input type="text" placeholder="Proffession">
+                <ion-icon name="mail-outline"></ion-icon>
+            </ion-input>
+
+        </div>
+
+        <ion-button expand="block" shape="round">
+            Save Changes
+        </ion-button>
+
+    </div>
+</ion-content>

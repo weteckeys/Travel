@@ -1,0 +1,24 @@
+<ion-header mode="ios" class="ion-no-border">
+    <ion-toolbar>
+        <ion-button fill="clear" (click)="goBack()">
+            <ion-icon name="arrow-back" style="color: black;"></ion-icon>
+        </ion-button>
+        <ion-title>Notification</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="card_div" *ngFor="let item of notifications">
+            <div class="round_div">
+                <img [src]="item.img" alt="">
+            </div>
+            <div class="content_div">
+                <ion-label class="simp_lbl">
+                    {{item.name}}
+                </ion-label>
+                <ion-label class="date_lbl">{{item.date}}</ion-label>
+            </div>
+        </div>
+    </div>
+</ion-content>

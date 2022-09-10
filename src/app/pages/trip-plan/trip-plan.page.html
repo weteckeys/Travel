@@ -1,0 +1,58 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="back_image" [style.backgroundImage]="'url(assets/imgs/nature1.jpg)'">  
+            <ion-icon name="arrow-back-outline" (click)="goToBack()"></ion-icon>
+            <ion-label>Bali, Indonesia</ion-label>
+        </div>
+
+        <div class="white_div">
+
+          <ion-label class="head_lbl">About Bali</ion-label>
+
+          <ion-label class="detail_lbl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Cum commodi maxime dolore saepe adipisci perspiciatis quo, quidem hic iusto 
+            tempore odit eveniet illum minima esse nulla 
+            voluptates, natus itaque doloribus?
+          </ion-label>
+
+          <div class="rate_flex">
+            <div style="display: flex;align-items: center;">
+                <ion-rating [rate]="rate" readonly="false" size="small" (rateChange)="onRateChange($event)"></ion-rating>
+                <ion-label style="margin-left: 5px;">4.9(32 Reviews)</ion-label>
+            </div>
+            <ion-label>See Reviews</ion-label>
+          </div>
+
+          <ion-label class="head_lbl">Pricing</ion-label>
+
+          <div class="grey_box" (click)="goToFlights()">
+              <div class="round_box plane_div">
+                <ion-icon name="airplane-sharp"></ion-icon>
+              </div>
+              <div class="content_div">
+                  <ion-label class="bold_lbl">Flights</ion-label>
+                  <ion-label class="small_lbl">from $199</ion-label>
+              </div>
+              <ion-icon name="arrow-forward-outline" class="forward_icn"></ion-icon>
+          </div>
+
+          <div class="grey_box" style="border: 0px;" (click)="goToHotelMap()">
+              <div class="round_box hotel_div">
+                <ion-icon name="bed"></ion-icon>
+              </div>
+              <div class="content_div">
+                  <ion-label class="bold_lbl">Hotels</ion-label>
+                  <ion-label class="small_lbl">from $150/night </ion-label>
+              </div>
+              <ion-icon name="arrow-forward-outline" class="forward_icn"></ion-icon>
+          </div>
+
+          <ion-button expand="block" shape="round" (click)="goToAddPlan()">
+            Plan Trip
+          </ion-button>
+        </div>
+
+    </div>
+</ion-content>

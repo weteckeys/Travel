@@ -1,0 +1,48 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <ion-label class="grey_lbl">Find your next trip</ion-label>
+        <ion-label class="head_lbl">Explore Destination</ion-label>
+
+        <div class="search_flex">
+            <ion-input type="text" placeholder="Search">
+                <ion-icon name="search"></ion-icon>
+            </ion-input>
+            <div class="green_btn">
+                <ion-icon name="options-outline"></ion-icon>
+            </div>
+        </div>
+
+
+        <ion-label class="bold_lbl">Popular Location</ion-label>
+
+        <ion-slides mode="ios" scrollbar="ios" [options]="slideOpts">
+            <ion-slide *ngFor="let item of sliderImg" (click)="goToPlaceDetail()">
+                <div [style.backgroundImage]="'url('+ item +')'" class="landscap_img">
+                    <div class="abs_div">
+                        <ion-label class="place_name">Bali, Indonesia</ion-label>
+                        <ion-label class="price">From $499</ion-label>
+                        <div class="rate_div">
+                            <ion-label>4.5</ion-label>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+
+        <ion-label class="bold_lbl">Browse by activity</ion-label>
+
+        <ion-slides mode="ios" scrollbar="ios" [options]="slideOpts2">
+            <ion-slide *ngFor="let item of sliderImg" (click)="goToPlaceDetail()">
+                <div [style.backgroundImage]="'url('+ item +')'" class="portrait_img">
+                    <div class="abs_div">
+                        <ion-label class="place_name">Chillout</ion-label>
+                        <ion-label class="price">28 Locations</ion-label>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+
+    </div>
+</ion-content>

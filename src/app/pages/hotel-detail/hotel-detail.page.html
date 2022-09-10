@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="main_content_div">
+
+      <div class="back_image" [style.backgroundImage]="'url(assets/imgs/nature1.jpg)'">  
+          <ion-icon name="arrow-back-outline" (click)="goBack()"></ion-icon>
+      </div>
+
+      <div class="white_div">
+
+        <ion-label class="head_lbl">About Hanging Garden Bali Hotel</ion-label>
+
+        <ion-label class="detail_lbl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Cum commodi maxime dolore saepe adipisci perspiciatis quo, quidem hic iusto 
+            tempore odit eveniet illum minima esse nulla 
+            voluptates, natus itaque doloribus?
+        </ion-label>
+
+        <div class="flex_div" style="margin-top: 20px;">
+            <div class="inner_div">
+                <ion-label class="grey_lbl">Price</ion-label>
+                <ion-label class="bold_lbl">$400</ion-label>
+            </div>
+            <div  class="inner_div">
+                <ion-label class="grey_lbl">Ratings</ion-label>
+                <ion-label class="star_lbl">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                    <span>(4.9)</span>
+                </ion-label>
+            </div>
+        </div>
+
+        <ion-label class="head_lbl">Amenities</ion-label>
+
+        <div class="flex_div">
+            <div class="light_box">
+                <ion-icon name="bed"></ion-icon>
+            </div>
+            <div class="light_box">
+                <ion-icon name="wifi"></ion-icon>
+            </div>
+            <div class="light_box">
+                <ion-icon name="fast-food"></ion-icon>
+            </div>
+            <div class="light_box">
+                <ion-icon name="beer"></ion-icon>
+            </div>
+            <div class="light_box">
+                <ion-icon name="beer"></ion-icon>
+            </div>
+        </div>
+
+        <ion-button expand="block" shape="round" (click)="goToHotelBook()">
+            Book Hotel
+        </ion-button>
+      </div>
+
+  </div>
+</ion-content>

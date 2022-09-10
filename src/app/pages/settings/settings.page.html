@@ -1,0 +1,67 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <ion-label class="title_lbl">Your Preferences</ion-label>
+
+        <div class="main_div">
+            <div class="user_div" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Adam</ion-label>
+                <ion-label class="grey_lbl">Photographer</ion-label>
+            </div>
+            <ion-button shape="round" size="small" class="edit_profile" (click)="goToEditProfile()">
+                Edit Profile
+            </ion-button>
+        </div>
+
+        <div class="main_div" (click)="goToCards()">
+            <div class="grey_div">
+                <ion-icon name="wallet"></ion-icon>
+            </div>
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Payment Method</ion-label>
+                <ion-label class="grey_lbl">Manage your cards</ion-label>
+            </div>
+            <ion-icon name="arrow-forward" class="next_arrow"></ion-icon>
+        </div>
+
+        <div class="main_div" (click)="goToDiscount()">
+            <div class="grey_div">
+                <ion-icon name="wallet"></ion-icon>
+            </div>
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Discounts</ion-label>
+                <ion-label class="grey_lbl">Check out your discounts</ion-label>
+            </div>
+            <ion-icon name="arrow-forward" class="next_arrow"></ion-icon>
+        </div>
+
+        <div class="main_div" (click)="goToNotification()">
+            <div class="grey_div">
+                <ion-icon name="notifications"></ion-icon>
+            </div>
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Notifications</ion-label>
+                <ion-label class="grey_lbl">Notification preferences</ion-label>
+            </div>
+            <ion-icon name="arrow-forward" class="next_arrow"></ion-icon>
+        </div>
+
+        <div class="main_div" (click)="goToTimezone()">
+            <div class="grey_div">
+                <ion-icon name="time"></ion-icon>
+            </div>
+            <div class="detail_div">
+                <ion-label class="bold_lbl">Time Zone</ion-label>
+                <ion-label class="grey_lbl">Change your time zone</ion-label>
+            </div>
+            <ion-icon name="arrow-forward" class="next_arrow"></ion-icon>
+        </div>
+
+        <div class="logout_div" (click)="logout()">
+            <ion-icon name="exit"></ion-icon>
+            <ion-label>Logout</ion-label>
+        </div>
+
+    </div>
+</ion-content>

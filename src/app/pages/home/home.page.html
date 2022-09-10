@@ -1,0 +1,85 @@
+<ion-header mode="ios" class="ion-no-border">
+    <div class="header_flex">
+        <div>
+            <div class="weather_flex">
+                <img src="assets/imgs/cloudy.png">
+                <ion-label>27, Oslo</ion-label>
+            </div>
+            <ion-label class="name">Hello, Adam</ion-label>
+        </div>
+        <div class="round_img" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_div">
+            <ion-label class="bold_lbl">Current Trip</ion-label>
+            <div class="back_image" [style.backgroundImage]="'url(assets/imgs/nature4.jpg)'">
+
+                <div class="users_flex">
+                    <div class="user_round" [style.backgroundImage]="'url(assets/imgs/user1.jpg)'"></div>
+                    <div class="user_round" [style.backgroundImage]="'url(assets/imgs/user2.jpg)'"></div>
+                    <div class="user_round" [style.backgroundImage]="'url(assets/imgs/user3.jpg)'"></div>
+                </div>
+
+                <div class="manage_flex">
+                    <div>
+                        <ion-label class="place_name">Oslo, Norway</ion-label>
+                        <ion-label class="small_lbl">3 more days</ion-label>
+                    </div>
+                    <div>
+                        <ion-button>
+                            Manage
+                        </ion-button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grey_box">
+            <ion-label class="bold_lbl">Trip Plan</ion-label>
+
+            <div class="tracking_div">
+
+                <div class="first">
+                    <span *ngFor="let item of orderDetail">
+                        <ion-label>{{item.time}}</ion-label>
+                    </span>
+                </div>
+
+                <div class="left">
+                    <span *ngFor="let item of orderDetail">
+                        <div class="line_div" [class.line_div_darkgray]="item.status == 1"></div>
+                        <div class="round_div_gray" [class.round_div_red]="item.status == 2"
+                            [class.round_div_darkgray]="item.status == 1">
+                            <ion-icon name="checkmark"></ion-icon>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="right">
+                    <span *ngFor="let item of orderDetail" style="width: 100%;">
+                        <div class="round_div_gray" [class.round_div_red]="item.status == 2"
+                            [class.round_div_darkgray]="item.status == 1">
+                            <div class="content_flex">
+                                <div>
+                                    <ion-label class="act_lbl">{{item.activity}}</ion-label>
+                                    <ion-label class="place_lbl">{{item.location}}</ion-label>
+                                </div>
+                                <div class="image_div">
+                                    <img src="{{item.img}}">
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

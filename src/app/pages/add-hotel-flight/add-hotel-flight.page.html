@@ -1,0 +1,89 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" mode="md">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Hotel and Flight</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        
+        <ion-label class="bold_lbl">Hotel</ion-label>
+        <div class="back_image" [style.backgroundImage]="'url(assets/imgs/nature1.jpg)'">
+            <ion-label class="place_lbl">Hanging Gardens of Bali Hotel</ion-label>
+            <div class="star_flex">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+        </div>
+
+        <ion-label class="bold_lbl">Flights</ion-label>
+        <div class="flight_flex">
+
+            <div class="grey_flex">
+                <div class="round_div">
+                    <img src="assets/imgs/us.png">
+                </div>
+                <ion-label class="loc_lbl">LAX</ion-label>
+                <ion-label class="date">20.03, 06:00 AM</ion-label>
+                <div class="ticket_flex">
+                  <ion-icon name="ticket"></ion-icon>
+                  <ion-label>First Class</ion-label>
+                </div>
+            </div>
+
+            <ion-icon name="arrow-forward" class="forward_icn"></ion-icon>
+
+            <div class="grey_flex">
+                <div class="round_div">
+                    <img src="assets/imgs/in.png">
+                </div>
+                <ion-label class="loc_lbl">DPS</ion-label>
+                <ion-label class="date">20.03, 06:00 AM</ion-label>
+                <div class="ticket_flex">
+                  <ion-icon name="ticket"></ion-icon>
+                  <ion-label>First Class</ion-label>
+                </div>
+            </div>
+
+        </div>
+
+        <ion-label class="bold_lbl">Costs</ion-label>
+
+        <div class="cost_flex">
+            <ion-label>Hotel (4 Nights)</ion-label>
+            <div class="dash_div">
+                <ion-label>----------------------------------------------------------</ion-label>
+            </div>
+            <ion-label class="green_lbl">$765</ion-label>
+        </div>
+
+        <div class="cost_flex">
+            <ion-label>Flights</ion-label>
+            <div class="dash_div">
+              <ion-label>----------------------------------------------------------</ion-label>
+            </div>
+            <ion-label class="green_lbl">$754</ion-label>
+        </div>
+
+        <div class="cost_flex">
+            <ion-label>Total</ion-label>
+            <div class="dash_div">
+                <ion-label>----------------------------------------------------------</ion-label>
+            </div>
+            <ion-label class="green_lbl">$1519</ion-label>
+        </div>
+
+    </div>
+</ion-content>
+
+<ion-footer>
+    <ion-button expand="block" shape="round" (click)="goToHome()">
+        Create trip plan
+    </ion-button>
+</ion-footer>

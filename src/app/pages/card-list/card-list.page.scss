@@ -1,0 +1,36 @@
+.main_content_div {
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+    .btn_div {
+        text-align: right;
+        margin-bottom: 20px;
+        ion-button {
+            --border-radius: 3px;
+            letter-spacing: 1px;
+            margin: 0px;
+        }
+    }
+
+    
+
+    .card_box {
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.2) !important;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        margin-bottom: 16px;
+
+        .bold_lbl {
+            font-family: 'semi-bold';
+        }
+        .small_lbl {
+            color: grey;
+            font-size: 14px;
+        }
+    }
+}

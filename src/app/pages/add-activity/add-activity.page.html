@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Add Activity</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+      <ion-label class="simp_lbl">Date</ion-label>
+      <ion-datetime display-format="hh:mm:A" placeholder="HH:MM"></ion-datetime>
+
+      <ion-label class="simp_lbl">Name</ion-label>
+      <ion-input type="text" placeholder="Activity Name"></ion-input>
+      
+      <ion-button (click)="dismiss()" expand="block" shape="round">
+        Add Activity
+      </ion-button>
+        
+        
+    </div>
+</ion-content>

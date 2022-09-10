@@ -1,0 +1,49 @@
+<ion-header mode="ios" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start" mode="md">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>New Plan</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="back_image" [style.backgroundImage]="'url(assets/imgs/nature1.jpg)'">
+            <ion-label class="small_lbl">Destination</ion-label>
+            <ion-label class="place_lbl">Bali, Indonesia</ion-label>
+        </div>
+
+        <div class="calendar_div">
+            <ion-label class="bold_lbl">Select Dates</ion-label>
+
+            <ion-calendar [(ngModel)]="dateRange"
+                [options]="optionsRange"
+                [type]="type"
+                [format]="'YYYY-MM-DD'">
+            </ion-calendar>
+
+        </div>
+
+        <ion-label class="bold_lbl">Add People</ion-label>
+        <div class="search_flex">
+            <ion-input type="text" placeholder="Search people...">
+                <ion-icon name="people-outline"></ion-icon>
+            </ion-input>
+            <div class="option_back">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="search_flex">
+            <ion-label>Send invites via e-mail</ion-label>
+            <ion-toggle mode="ios"></ion-toggle>
+        </div>
+
+        <ion-button (click)="goToAddDayPlan()" expand="block" shape="round">
+          Next Step
+        </ion-button>
+
+    </div>
+</ion-content>

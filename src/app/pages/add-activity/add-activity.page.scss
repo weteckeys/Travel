@@ -1,0 +1,16 @@
+.main_content_div {
+    padding: 16px;
+
+    .simp_lbl {
+        color: grey;
+        margin-bottom: 5px;
+    }
+    ion-input, ion-datetime {
+        border: 1px solid lightgrey;
+        border-radius: 25px;
+        height: 48px;
+        --padding-start: 16px;
+        --padding-end: 16px;
+        margin-bottom: 20px;
+    }
+}

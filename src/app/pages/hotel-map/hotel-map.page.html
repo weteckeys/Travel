@@ -1,0 +1,53 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_div">
+            <div #map id="map" class="map"></div>
+            <div class="abs_div">
+
+                <div class="search_flex">
+                    <div class="white_back" (click)="goToBack()">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <ion-input type="text" placeholder="Search">
+                        <ion-icon name="search"></ion-icon>
+                    </ion-input>
+                    <div class="option_back">
+                        <ion-icon name="options-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="slider_div">
+                    <ion-label class="bold_lbl">Hotels in Bali</ion-label>
+                    <ion-slides mode="ios" scrollbar="ios" [options]="slideOpts">
+                        <ion-slide *ngFor="let item of sliderImg">
+                            <div class="slide_div">
+                                <div class="back_image" [style.backgroundImage]="'url('+ item +')'"></div>
+                                <div class="content_div">
+                                    <ion-label class="name">Hanging Gardens of Bali Hotel</ion-label>
+                                    <div class="star_flex">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                    <div class="price_flex">
+                                        <div>
+                                            <ion-label class="price_lbl">from $199/night</ion-label>
+                                        </div>
+                                        <div class="green_div" (click)="goToHotelDetail()">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ion-slide>
+                    </ion-slides>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</ion-content>

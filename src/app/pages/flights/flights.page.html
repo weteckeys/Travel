@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button fill="clear" (click)="goBack()">
+            <ion-icon name="arrow-back" style="color: black;"></ion-icon>
+        </ion-button>
+        <ion-title>Flights</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <div class="card_box" *ngFor="let item of [1,2,3,4]">
+            <div class="flex_div">
+                <div>
+                    <ion-label class="green_lbl">Sdyney</ion-label>
+                    <ion-label class="green_small">(SYD)</ion-label>
+                </div>
+                <ion-icon name="airplane-sharp"></ion-icon>
+                <div>
+                    <ion-label class="green_lbl">London</ion-label>
+                    <ion-label class="green_small" style="text-align: right;">(LCY)</ion-label>
+                </div>
+            </div>
+
+            <div class="flex_div">
+                <ion-label class="grey_lbl">Depart</ion-label>
+                <ion-label class="grey_lbl">Depart</ion-label>
+            </div>
+            <div class="flex_div">
+                <ion-label class="bold_lbl">08:30 AM</ion-label>
+                <ion-label class="small_grey">2hr30min</ion-label>
+                <ion-label class="bold_lbl">11:00 AM</ion-label>
+            </div>
+            <div class="flex_div">
+                <ion-label class="orange_lbl">$200 <span>(Ticket Price)</span></ion-label>
+                <ion-button size="small" (click)="goToFlightBook()">
+                    Book Flight
+                </ion-button>
+            </div>
+        </div>
+    </div>
+</ion-content>

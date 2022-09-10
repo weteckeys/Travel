@@ -1,0 +1,36 @@
+.main_content_div {
+    padding: 16px;
+
+    ion-label {
+        display: block;
+    }
+
+   
+    
+    .icn_plane {
+        color: var(--ion-color-primary);
+        font-size: 30px;
+        transform: rotate(30deg);
+    }
+
+    .bold_lbl {
+        font-size: 18px;
+        font-family: 'semi-bold';
+        margin-bottom: 16px;
+    }
+    .simp_lbl {
+        color: grey;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    ion-input, ion-datetime {
+        border: 1px solid lightgrey;
+        border-radius: 25px;
+        height: 48px;
+        --padding-start: 16px;
+        --padding-end: 16px;
+        margin-bottom: 20px;
+        font-family: 'semi-bold';
+    }
+
+}

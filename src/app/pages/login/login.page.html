@@ -1,0 +1,40 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_flex">
+
+            <div class="simple_div">
+                <ion-icon name="arrow-back-outline" class="back_btn" (click)="goBack()"></ion-icon>
+                <ion-label class="bold_lbl">Get Started</ion-label>
+
+                <ion-input type="text" placeholder="Enter Email Address">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </ion-input>
+
+            </div>
+            <div class="login_flex">
+                <div></div>
+                <ion-label>Or continue with</ion-label>
+                <div></div>
+            </div>
+            <div class="btn_div">
+                <ion-button expand="block" shape="round" class="apple_btn">
+                    <ion-icon name="logo-apple"></ion-icon>
+                    <ion-label>Continue with Apple </ion-label>
+                </ion-button>
+
+                <ion-button expand="block" shape="round" class="fb_btn">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-label>Continue with Facebook </ion-label>
+                </ion-button>
+            </div>
+          
+        </div>
+        <div class="lower_flex">
+            <ion-button (click)="goToHome()" expand="block" shape="round">
+              Continue
+            </ion-button>
+        </div>
+
+    </div>
+</ion-content>

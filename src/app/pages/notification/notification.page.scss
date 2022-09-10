@@ -1,0 +1,49 @@
+ion-content {
+    --background: #F7F7F7;
+}
+.main_content_div {
+
+    ion-label {
+        display: block;
+    }
+
+    .card_div {
+        padding: 16px;
+        display: flex;
+        background: white;
+        position: relative;
+        margin-bottom: 16px;
+
+        .round_div {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 100%;
+            background: #f3f3f3;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 24px;
+            }
+        }
+
+        .content_div {
+            padding-left: 16px;
+
+            .simp_lbl {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+        .date_lbl {
+            font-size: 12px;
+            color: grey;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+    }
+}
